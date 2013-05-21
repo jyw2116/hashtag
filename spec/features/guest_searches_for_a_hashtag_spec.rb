@@ -43,10 +43,4 @@ feature 'Guest searches for a hashtag' do
     fill_in 'Search', with: term
     click_on 'Submit'
   end
-
-  around do |example|
-  	cached_backend = Searcher.backend
-  	example.run
-  	Searcher.backend = cached_backend
-  end
 end

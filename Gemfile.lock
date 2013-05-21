@@ -59,7 +59,6 @@ GEM
       railties (>= 3.0.0)
     faraday (0.8.7)
       multipart-post (~> 1.1)
-    high_voltage (1.2.2)
     hike (1.2.2)
     i18n (0.6.4)
     journey (1.0.4)
@@ -155,7 +154,6 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   dotenv-rails
   factory_girl_rails
-  high_voltage
   jquery-rails
   rails (= 3.2.12)
   rspec-rails

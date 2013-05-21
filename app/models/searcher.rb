@@ -8,7 +8,7 @@ class Searcher
 
 	def each(&block)
 		# class attributes allow setting attributes on a class level and on an instance level (below):
-		backend.search(@term).results.each(&block)
+	backend.search(@term).results.each(&block)
 	end
 end
 

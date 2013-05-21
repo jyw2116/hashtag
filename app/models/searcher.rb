@@ -8,8 +8,18 @@ class Searcher
 
 	def each(&block)
 		# class attributes allow setting attributes on a class level and on an instance level (below):
-	backend.search(@term).results.each(&block)
+		tweets.each(&block)
 	end
+
+	def length
+		tweets.length
+	end
+
+	private
+
+	def tweets
+    @tweets ||= backend.search(@term).results
+  end
 end
 
 # this allows for something like :

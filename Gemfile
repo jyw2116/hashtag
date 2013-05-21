@@ -11,10 +11,8 @@ gem 'twitter'
 group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails'
+  gem 'bourne'
   gem 'capybara', '~> 2.1.0'
-  gem 'shoulda-matchers'
-  gem 'factory_girl_rails'
-  gem 'timecop'
 end
 
 # Gems used only for assets and not required
